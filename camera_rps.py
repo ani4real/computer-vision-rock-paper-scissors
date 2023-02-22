@@ -84,9 +84,10 @@ class RPS:
 def play_game(choice_list):
     R1 = RPS()
     print('Welcome to the ROCK, PAPER, SCISSORS game')
-    enter = input('press y to begin and n to quit')
+    enter = input('press y to begin')
     if enter == 'y':
         while True:
+            
             R1.get_countdown()
             computer_choice = R1.get_computer_choice()
             user_choice = R1.get_prediction()
@@ -97,12 +98,12 @@ def play_game(choice_list):
             else:
                 R1.get_winner(computer_choice, user_choice)
             
-            if R1.computer_wins == 3:
-                print("You lost the game!")
-                break
-            elif R1.user_wins == 3:
-                print("You won the game!")
-                break
+                if R1.computer_wins == 3:
+                    print("You lost the game!")
+                    break
+                elif R1.user_wins == 3:
+                    print("You won the game!")
+                    break
          # After the loop release the cap object
 
         RPS.cap.release()
