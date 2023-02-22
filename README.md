@@ -9,3 +9,6 @@ This Python project is an implementation of the "Rock, Paper, Scissors" where th
 - In the first milestone a model was exported from Teachable Machine. Teachable machine is a web tool that makes it fast and easy to create machine learning models for projects, no coding required. Train a computer to recognize images, sounds, & poses.
 
 The model was downloaded from the tensorflow tab. keras_model.h5 and labels.txt were the teo files that were extracted onto the local device. These contain the structure and the parameters of a deep learaning model.
+
+## Milestone 3 
+Milestone 3 was where where all the dependencies were installed from the command line. ```opencv-python```, ```tensorflow``` and ```ipykernel``` were the neccesary requirements that were installed. `pip install` command was used to install the libraries. A virtual environment called RPS-env was created where all the libraries were installed.
