@@ -8,9 +8,9 @@ def get_computer_choice():
 def get_user_choice():
     while True:
         user_choice = input('Please enter your choice: ')
+        user_choice = user_choice.lower()
         if user_choice not in option:
-            print("Please enter a valid choice.")
-            user_choice = user_choice.lower()
+            print("Please enter a valid choice.")    
         else:
             break
     return user_choice
@@ -18,7 +18,7 @@ def get_user_choice():
         
 
 def get_winner(computer_choice, user_choice):
-    result = 0
+    result = ''
 
     if computer_choice == user_choice:
         result = f"You've tied! you and the computer went with {computer_choice.upper()}!"
